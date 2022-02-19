@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HelloWorld {
+    public HelloWorld() {
+    }
 
     public String helloWorld(){
         Gson gson = new Gson();
