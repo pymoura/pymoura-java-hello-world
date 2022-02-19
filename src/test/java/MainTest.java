@@ -1,18 +1,12 @@
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainTest {
-    private HelloWorld helloWorld;
-
-    @BeforeEach
-    public void init(){
-        helloWorld = new HelloWorld();
-    }
 
     @Test
     public void testHelloWorld(){
-        Assertions.assertEquals("{\"hello\":\"world\"}", helloWorld.helloWorld());
+        HelloWorld helloWorld = new HelloWorld();
+        assertEquals("{\"hello\":\"world\"}", helloWorld.sayHello());
 
     }
 
