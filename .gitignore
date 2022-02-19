@@ -1,2 +1,4 @@
 *.idea/
 target/
+*.yml
+*.DS_Store
