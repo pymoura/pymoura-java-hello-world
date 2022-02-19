@@ -4,6 +4,7 @@ RUN yum update -y && yum install git -y
 
 COPY src /app/src
 COPY pom.xml /app
-RUN mvn -f /app/pom.xml clean package
+WORKDIR /app
+RUN mvn clean install
 
-ENTRYPOINT ["java","-jar","/usr/local/lib/demo.jar"]
+ENTRYPOINT ["java","-jar","/app/target/pymoura-java-hello-world-1.0-SNAPSHOT.jar"]

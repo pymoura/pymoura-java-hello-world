@@ -3,8 +3,5 @@ public class Main {
         HelloWorld helloWorld = new HelloWorld();
         System.out.println(helloWorld.sayHello());
 
-
-
-
     }
 }
